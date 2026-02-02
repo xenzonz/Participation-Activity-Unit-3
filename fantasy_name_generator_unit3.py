@@ -23,15 +23,18 @@ def generate_first_name():
     first_name = random.choice(first_beginning) + random.choice(first_middle) + random.choice(first_ending)
     return first_name
 
-# test print
-print(generate_first_name())
-
 # last name generator function
 def generate_last_name():
     last_name = random.choice(last_beginning) + random.choice(last_ending)
     return last_name
 
-print(generate_last_name())
+# combine functions
+def combine_generated_names():
+    return generate_first_name() + " " + generate_last_name()
+
+# for loop to generate a number of names
+for _ in range(10):
+    print(combine_generated_names())
 
 
 
