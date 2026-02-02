@@ -26,5 +26,12 @@ def generate_first_name():
 # test print
 print(generate_first_name())
 
+# last name generator function
+def generate_last_name():
+    last_name = random.choice(last_beginning) + random.choice(last_ending)
+    return last_name
+
+print(generate_last_name())
+
 
 
